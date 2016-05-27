@@ -7,8 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <JavaScriptCore/JavaScriptCore.h>
 
-@interface ViewController : UIViewController
+@protocol NativeJSExport <JSExport>
+//JSExportAs(<#PropertyName#>, <#Selector#>)
+
+-(void)jsCallNative;
+-(NSString *)jsGetNativeStringData;
+-(NSArray *)jsGetNativeArrayData;
+-(NSDictionary *)jsGetNativeJsonData;
+
+-(void)getTCTC;
+
+
+@end
+
+
+@interface ViewController : UIViewController<UIWebViewDelegate,NativeJSExport>
+
+@property (nonatomic,weak) IBOutlet UIWebView *webView;
+@property (nonatomic,strong) JSContext *context;
 
 
 @end
