@@ -8,6 +8,8 @@
 		button { margin:0 3px 10px; font-size:12px; }
 		.logLine { border-bottom:1px solid #ccc; padding:4px 2px; font-family:courier; font-size:11px; }
 	</style>
+    
+    
 </head>
 <script type="text/javascript" src="jquery1.9.js"></script>
 <script type="text/javascript" src="ExampleApp.js"></script>
@@ -61,8 +63,39 @@
     <input type="button" value="getArray" onclick="getArray()"/>
     <input type="button" value="getJson" onclick="getJson()"/>
 	<input type="button" value="getTCTC" onclick="getTCTC()"/>
+    <input id = "aa" type="file">
     <div>
     <a href="ExampleApp2.html">ExampleApp2.html</a>
     </div>
+    
+    
+   <script>
+       document.getElementById("aa").onclick = readFileZ(e) {
+           parent = e.target.parentNode;
+           file = e.target.files[0];
+           if (!/image\/\w+/.test(file.type)) {
+               alert('文件必须为图片！');
+               return false;
+           }
+           reader = new FileReader();
+           reader.readAsDataURL(file);
+           reader.onload = function ss() {
+               src = document.createElement('img');
+               src.setAttribute('src', this.result);
+               src.style.position = 'absolute';
+               src.style.top = '0';
+               src.style.left = '0';
+               src.style.height = '6.5rem';
+               src.style.width = '100%';
+               // src = '<img src="';
+               // src += this.result;
+               // src += '"/>';
+               parent.appendChild(src);
+               // this.result.split(',')[1]
+               vm.images.push(this.result.split(',')[1]);
+           };
+           return file;
+       }
+   </script>
   
 </body></html>

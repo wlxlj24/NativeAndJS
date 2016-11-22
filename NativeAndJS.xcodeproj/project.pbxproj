@@ -10,6 +10,7 @@
 		96F61FD41CA23A1C0022FD6F /* TCWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F61FD31CA23A1C0022FD6F /* TCWebView.m */; };
 		96F61FD71CA23AC90022FD6F /* TCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F61FD61CA23AC90022FD6F /* TCViewController.m */; };
 		96F61FD91CA23B5B0022FD6F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F61FD81CA23B5B0022FD6F /* WebKit.framework */; };
+		BD8C976577AC9DEF756D585D /* libPods-NativeAndJS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E0D0E69D41911420DCB0A2 /* libPods-NativeAndJS.a */; };
 		CB6C3B691BA10D29007EC918 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6C3B681BA10D29007EC918 /* main.m */; };
 		CB6C3B6C1BA10D29007EC918 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6C3B6B1BA10D29007EC918 /* AppDelegate.m */; };
 		CB6C3B6F1BA10D29007EC918 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6C3B6E1BA10D29007EC918 /* ViewController.m */; };
@@ -35,11 +36,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3247CACABABF49EC6EE91C47 /* Pods-NativeAndJS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeAndJS.release.xcconfig"; path = "Pods/Target Support Files/Pods-NativeAndJS/Pods-NativeAndJS.release.xcconfig"; sourceTree = "<group>"; };
+		49E0F17E818364F49AFF898B /* Pods-NativeAndJS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeAndJS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NativeAndJS/Pods-NativeAndJS.debug.xcconfig"; sourceTree = "<group>"; };
 		96F61FD21CA23A1C0022FD6F /* TCWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCWebView.h; sourceTree = "<group>"; };
 		96F61FD31CA23A1C0022FD6F /* TCWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCWebView.m; sourceTree = "<group>"; };
 		96F61FD51CA23AC90022FD6F /* TCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCViewController.h; sourceTree = "<group>"; };
 		96F61FD61CA23AC90022FD6F /* TCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCViewController.m; sourceTree = "<group>"; };
 		96F61FD81CA23B5B0022FD6F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/PrivateFrameworks/WebKit.framework; sourceTree = SDKROOT; };
+		A5E0D0E69D41911420DCB0A2 /* libPods-NativeAndJS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NativeAndJS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6C3B631BA10D29007EC918 /* NativeAndJS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeAndJS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6C3B671BA10D29007EC918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB6C3B681BA10D29007EC918 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 			files = (
 				96F61FD91CA23B5B0022FD6F /* WebKit.framework in Frameworks */,
 				CB6C3B8D1BA10E95007EC918 /* JavaScriptCore.framework in Frameworks */,
+				BD8C976577AC9DEF756D585D /* libPods-NativeAndJS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B84947582767D8062394AB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5E0D0E69D41911420DCB0A2 /* libPods-NativeAndJS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		96F61FD11CA239FF0022FD6F /* TCWebView */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +100,15 @@
 				96F61FD31CA23A1C0022FD6F /* TCWebView.m */,
 			);
 			name = TCWebView;
+			sourceTree = "<group>";
+		};
+		AC3E414FC3553777D3D2EF6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49E0F17E818364F49AFF898B /* Pods-NativeAndJS.debug.xcconfig */,
+				3247CACABABF49EC6EE91C47 /* Pods-NativeAndJS.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		CB6C3B5A1BA10D29007EC918 = {
@@ -97,6 +119,8 @@
 				CB6C3B651BA10D29007EC918 /* NativeAndJS */,
 				CB6C3B7F1BA10D29007EC918 /* NativeAndJSTests */,
 				CB6C3B641BA10D29007EC918 /* Products */,
+				AC3E414FC3553777D3D2EF6E /* Pods */,
+				5B84947582767D8062394AB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,9 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB6C3B861BA10D29007EC918 /* Build configuration list for PBXNativeTarget "NativeAndJS" */;
 			buildPhases = (
+				258D1DA2293EC760F12DA567 /* [CP] Check Pods Manifest.lock */,
 				CB6C3B5F1BA10D29007EC918 /* Sources */,
 				CB6C3B601BA10D29007EC918 /* Frameworks */,
 				CB6C3B611BA10D29007EC918 /* Resources */,
+				F5A6A167DCA10574E79BD41A /* [CP] Embed Pods Frameworks */,
+				B16722A3802DDCBFA5174EEE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,7 +233,8 @@
 				TargetAttributes = {
 					CB6C3B621BA10D29007EC918 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = J9RC9WV7UX;
+						DevelopmentTeam = X9EJ7HR3QF;
+						ProvisioningStyle = Automatic;
 					};
 					CB6C3B7B1BA10D29007EC918 = {
 						CreatedOnToolsVersion = 6.4;
@@ -256,6 +284,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		258D1DA2293EC760F12DA567 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B16722A3802DDCBFA5174EEE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NativeAndJS/Pods-NativeAndJS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5A6A167DCA10574E79BD41A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NativeAndJS/Pods-NativeAndJS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB6C3B5F1BA10D29007EC918 /* Sources */ = {
@@ -392,10 +468,12 @@
 		};
 		CB6C3B871BA10D29007EC918 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49E0F17E818364F49AFF898B /* Pods-NativeAndJS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Ningbo Jiaxiang network technology co.LTD.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ningbo Jiaxiang network technology co.LTD.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = X9EJ7HR3QF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
@@ -403,19 +481,21 @@
 				INFOPLIST_FILE = NativeAndJS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jiaxiang.BST;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunModel.FlowCIDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3e7d062b-d50e-45eb-af3b-c295d675ada2";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		CB6C3B881BA10D29007EC918 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3247CACABABF49EC6EE91C47 /* Pods-NativeAndJS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Ningbo Jiaxiang network technology co.LTD.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ningbo Jiaxiang network technology co.LTD.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = X9EJ7HR3QF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
@@ -423,9 +503,9 @@
 				INFOPLIST_FILE = NativeAndJS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jiaxiang.BST;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunModel.FlowCIDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3e7d062b-d50e-45eb-af3b-c295d675ada2";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

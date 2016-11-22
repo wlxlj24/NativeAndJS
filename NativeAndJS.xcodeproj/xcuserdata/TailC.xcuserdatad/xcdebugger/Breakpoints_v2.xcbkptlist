@@ -16,7 +16,7 @@
             startingLineNumber = "64"
             endingLineNumber = "64"
             landmarkName = "-jsGetNativeStringData"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -32,7 +32,7 @@
             startingLineNumber = "77"
             endingLineNumber = "77"
             landmarkName = "-getTCTC"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
