@@ -233,8 +233,8 @@
 				TargetAttributes = {
 					CB6C3B621BA10D29007EC918 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = X9EJ7HR3QF;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 627UB48BZA;
+						ProvisioningStyle = Manual;
 					};
 					CB6C3B7B1BA10D29007EC918 = {
 						CreatedOnToolsVersion = 6.4;
@@ -473,7 +473,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Ningbo Jiaxiang network technology co.LTD.";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = X9EJ7HR3QF;
+				DEVELOPMENT_TEAM = 627UB48BZA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
@@ -483,7 +483,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yunModel.FlowCIDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "60b3c4e5-1960-4d8d-8864-e95c37959240";
+				PROVISIONING_PROFILE_SPECIFIER = FlowCIDemo_dev_pp;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -495,7 +496,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Ningbo Jiaxiang network technology co.LTD.";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = X9EJ7HR3QF;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
